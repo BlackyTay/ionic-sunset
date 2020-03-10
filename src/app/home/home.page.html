@@ -1,17 +1,36 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
+
+  <div class="controls">
+    <ion-button color="light" (click)="setDay()">
+      <!-- <ion-icon slot="start" name="add"></ion-icon> -->
+      Day
+    </ion-button>
+    <ion-button color="light" (click)="setCloudy()">
+      <!-- <ion-icon slot="start" name="add"></ion-icon> -->
+      Cloudy
+    </ion-button>
+    <ion-button color="light" (click)="setSunset()">
+      <!-- <ion-icon slot="start" name="add"></ion-icon> -->
+      Sunset
+    </ion-button>
+    <ion-button color="light" (click)="setNight()">
+      <!-- <ion-icon slot="start" name="add"></ion-icon> -->
+      Night
+    </ion-button>
+  </div>
 
   <svg class="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 1334">
     <defs>
@@ -55,4 +74,6 @@
       <path id="Cloud-4" data-name="Cloud" class="cls-5" d="M657.61,1201.29c9.53-6.84,15.35-16,15.35-26,0-18.94-20.8-34.66-48.16-37.83,0-.2,0-0.39,0-0.59,0-28.13-29.43-50.93-65.74-50.93-31.76,0-58.27,17.45-64.4,40.65a156.9,156.9,0,0,0-23.56-1.76c-44.93,0-83.29,18.71-98.53,45.08-30.67,13.75-50.29,34.78-50.29,58.36,0,41.42,60.52,75,135.19,75,41.79,0,79.14-10.52,103.94-27,14.64,6.08,33.12,9.71,53.21,9.71,47.56,0,86.11-20.31,86.11-45.37C700.74,1223.79,683.38,1209.13,657.61,1201.29Z"/>
     </g>
   </svg>
+
+  <div class="time">{{timeString}}</div>
 </ion-content>
