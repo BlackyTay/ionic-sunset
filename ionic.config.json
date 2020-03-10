@@ -1,0 +1,7 @@
+{
+  "name": "ionic-sunset",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
