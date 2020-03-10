@@ -14,7 +14,7 @@ export class HomePage implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.timeString = dateFns.format(this.timeOfDay, 'h:mm A');
+    this.timeString = dateFns.format(this.timeOfDay, 'h:mm a');
   }
 
 }
