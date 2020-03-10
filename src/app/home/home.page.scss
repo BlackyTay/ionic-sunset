@@ -26,6 +26,37 @@
   text-decoration: none;
 }
 
-ion-content ion-toolbar {
+ion-content{
+  
+  ion-toolbar {
   --background: translucent;
+  }
+
+  .scroll-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .time {
+    z-index: 1;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #8e8e8e;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+  }
+
+  .background {
+    position: absolute;
+  }
+
+  .controls {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+    opacity: 0.2;
+  }
 }
